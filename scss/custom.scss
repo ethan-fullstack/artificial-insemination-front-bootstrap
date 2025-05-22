@@ -1,0 +1,74 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+// Importar tus colores personalizados
+@import "_colors";
+
+// variables y mixins de Bootstrap
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// Extender utilidades (custom colores + paleta tonal completa)
+$all-colors: map-merge-multiple(
+  $grays,
+  $blues,
+  $indigos,
+  $purples,
+  $pinks,
+  $reds,
+  $oranges,
+  $yellows,
+  $greens,
+  $teals,
+  $cyans
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: map-merge($theme-colors, $all-colors),
+    ),
+    "color": (
+      property: color,
+      class: text,
+      values: map-merge($theme-colors, $all-colors),
+    ),
+    "border-color": (
+      property: border-color,
+      class: border,
+      values: map-merge($theme-colors, $all-colors),
+    ),
+    "alert": (
+      property: background-color,
+      class: alert,
+      values: map-merge($theme-colors, $all-colors),
+    ),
+    "alert-color": (
+      property: color,
+      class: alert-color,
+      values: map-merge($theme-colors, $all-colors),
+    ),
+    "list-group-item": (
+      property: background-color,
+      class: list-group-item,
+      values: map-merge($theme-colors, $all-colors),
+    ),
+  )
+);
+
+// Generar variantes para botones personalizados
+// @each $name, $color in $theme-colors {
+//   .btn-#{$name} {
+//     @include button-variant($color, $color);
+//   }
+//   .btn-outline-#{$name} {
+//     @include button-outline-variant($color);
+//   }
+// }
+
+// Compilar Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

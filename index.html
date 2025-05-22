@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Inseminación Artificial</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-sena-primary">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="./img/logo.svg"
+            alt="logo"
+            width="40"
+            height="40"
+            class="me-2"
+          />
+          <span class="text-white">Inseminación Artificial</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#beneficios">Beneficios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#procedimiento">Procedimiento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#casos">Resultados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cita">Agendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Components
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./components_bootstrap.html"
+                    target="_blank"
+                    >Bootstrap</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./components_custom.html"
+                    target="_blank"
+                    >Custom</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero-section -->
+    <header class="hero-section text-center text-light" id="inicio">
+      <div class="overlay"></div>
+      <div class="hero-content container">
+        <div class="content-box p-5 border rounded-4">
+          <h1 class="display-5 fw-bold">Mejora genética animal a tu alcance</h1>
+          <p class="lead">
+            Servicio profesional de inseminación artificial para el sector
+            agropecuario.
+          </p>
+          <a href="#cita" class="btn btn-light fw-semibold">Solicitar Cita</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Beneficios -->
+    <section class="py-5" id="beneficios">
+      <div class="container">
+        <h2 class="text-center mb-4">Beneficios del Servicio</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <div class="text-center">
+                <img
+                  src="./img/dna.png"
+                  alt=""
+                  srcset=""
+                  class="card-img-top benefits-img"
+                />
+              </div>
+              <div class="card-body">
+                <h5>Mejora genética</h5>
+                <p>
+                  Aumenta la calidad del ganado con selección especializada.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <div class="text-center">
+                <img
+                  src="./img/productivity.png"
+                  alt=""
+                  srcset=""
+                  class="card-img-top benefits-img"
+                />
+              </div>
+              <div class="card-body">
+                <h5>Mayor productividad</h5>
+                <p>Incrementa la tasa de nacimientos exitosos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <div class="text-center">
+                <img
+                  src="./img/cow.png"
+                  alt=""
+                  srcset=""
+                  class="card-img-top benefits-img"
+                />
+              </div>
+              <div class="card-body">
+                <h5>Salud controlada</h5>
+                <p>
+                  Reducción de enfermedades transmisibles por monta natural.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 text-center p-3">
+              <div class="text-center">
+                <img
+                  src="./img/farmer.png"
+                  alt=""
+                  srcset=""
+                  class="card-img-top benefits-img"
+                />
+              </div>
+              <div class="card-body">
+                <h5>Acompañamiento técnico</h5>
+                <p>Visitas de seguimiento por personal capacitado del SENA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Procedimiento -->
+    <section class="bg-sena-light py-5" id="procedimiento">
+      <div class="container">
+        <h2 class="text-center mb-4">¿Cómo funciona el servicio?</h2>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Diagnóstico inicial y visita técnica.</li>
+          <li class="list-group-item">
+            Selección del material genético (semen).
+          </li>
+          <li class="list-group-item">
+            Aplicación de la inseminación por personal capacitado.
+          </li>
+          <li class="list-group-item">Seguimiento y control de resultados.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Resultados y Casos de éxito-->
+    <section class="py-5" id="casos">
+      <div class="container">
+        <h2 class="text-center mb-4">Resultados y Casos de Éxito</h2>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/case-1.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-md-block">
+                <h5>Finca La Espezanza</h5>
+                <p>
+                  Mejora genética en ganado de carne, logrando un incremento del
+                  25% en la calidad de la carne.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/case-2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-md-block">
+                <h5>Finca El Roble</h5>
+                <p>
+                  Implementación de Inseminación Artificial en ganado lechero,
+                  aumentando la producción en un 30%.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/case-3.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-md-block">
+                <h5>Hato El Granero</h5>
+                <p>
+                  Resultados positivos en la salud del ganado, reduciendo
+                  enfermedades en un 40%.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/case-4.jpg" class="d-block w-100" alt="..." />
+              <!-- <div class="carousel-caption d-none d-md-block"> -->
+              <div class="carousel-caption d-md-block">
+                <h5>Finca Casablanca</h5>
+                <p>
+                  Aumento en la tasa de natalidad del 20% en el primer año de
+                  implementación.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cita -->
+    <section class="py-5 bg-sena-light" id="cita">
+      <div class="container">
+        <h2 class="text-center mb-4">Solicita una cita</h2>
+        <form class="row row-gap-3">
+          <div class="col-md-6">
+            <label for="nombre_completo" class="form-label"
+              >Nombre Completo</label
+            >
+            <div class="input-group">
+              <span class="input-group-text" id="nombre_completo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                  />
+                </svg>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre Completo"
+                aria-label="Nombre Completo"
+                aria-describedby="nombre_completo"
+              />
+            </div>
+            <!-- <input
+              type="text"
+              class="form-control"
+              id="nombre_completo"
+              placeholder="Nombre Completo"
+            /> -->
+          </div>
+          <div class="col-md-6">
+            <label for="municipio_vereda" class="form-label"
+              >Municipio / Vereda</label
+            >
+
+            <div class="input-group">
+              <label class="input-group-text" for="municipio_vereda">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
+                  />
+                  <path
+                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
+                  />
+                </svg>
+              </label>
+              <select
+                class="form-select"
+                aria-label="Municipio / Vereda"
+                id="municipio_vereda"
+              >
+                <option selected>Seleccione...</option>
+                <option value="1">Funza</option>
+                <option value="2">Mosquera</option>
+                <option value="3">Madrid</option>
+                <option value="4">Faca</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="numero_animales" class="form-label"
+              >Número de animales</label
+            >
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-heart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  />
+                </svg>
+              </span>
+              <input
+                type="number"
+                class="form-control"
+                id="numero_animales"
+                placeholder="Número de Animales"
+              />
+            </div>
+            <!-- <input
+              type="number"
+              class="form-control"
+              id="numero_animales"
+              placeholder="Número de Animales"
+            /> -->
+          </div>
+          <div class="col-md-6">
+            <label for="telefono_correo" class="form-label"
+              >Teléfono o correo</label
+            >
+
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                id="telefono_correo"
+                placeholder="Teléfono o Correo"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Registre sus comentarios"
+                id="comentarios"
+              ></textarea>
+              <label for="comentarios">Comentarios</label>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <button type="button" class="btn btn-dark">
+              Enviar Solicitud
+              <span class="ms-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-send-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="py-5" id="contacto">
+      <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Centro de Biotecnología Agropecuaria - Mosquera</h5>
+            <p>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-building"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+                  />
+                  <path
+                    d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"
+                  />
+                </svg> </span
+              >Dirección: Km 7 vía Bogotá - Mosquera
+            </p>
+            <p>Tel: (1) 5461600 ext. 17361</p>
+            <p>Email: cba@sena.edu.co</p>
+          </div>
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4264487123014!2d-74.21820772561762!3d4.695731541701861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9d58cf6e291b%3A0x8946ec678fcf04b4!2sSENA%20Mosquera%20-%20Centro%20de%20Biotecnolog%C3%ADa%20Agropecuaria%20(CBA)!5e0!3m2!1sen!2sco!4v1747840228522!5m2!1sen!2sco"
+              width="100%"
+              height="200px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sena-dark text-light py-3">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; 2025 SENA - Inseminación Artificial. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

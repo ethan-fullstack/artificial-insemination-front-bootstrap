@@ -1,0 +1,48 @@
+// Colores base personalizados
+$primary: #000957;
+$secondary: #dddddd;
+$success: #16c47f;
+$info: #577bc1;
+$warning: #ffd65a;
+$danger: #f93827;
+$light: #e4f1ff;
+$dark: #2a4759;
+
+// Sena
+$sena-theme-colors: (
+  "sena-primary": #007f73,
+  "sena-secondary": #faf1e6,
+  "sena-success": #800074,
+  "sena-info": #ff7cf6,
+  "sena-warning": #ffe680,
+  "sena-danger": #ec5228,
+  "sena-light": #e8ecd7,
+  "sena-dark": #1a1a19,
+);
+
+// Emphasis & Subtle Colors (ejemplo para primary y success)
+$primary-text-emphasis: $light;
+// $secondary-text-emphasis: #fff;
+// $success-text-emphasis: #fff;
+// $info-text-emphasis: #fff;
+// $warning-text-emphasis: #fff;
+// $danger-text-emphasis: #fff;
+// $light-text-emphasis: #fff;
+$dark-text-emphasis: $secondary;
+
+// $success-text-emphasis: #104d3f;
+// $success-bg-subtle: #dcfce7;
+// $success-border-subtle: #bef2d6;
+
+// Definir $theme-colors antes de importar Bootstrap
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+$theme-colors: map-merge($theme-colors, $sena-theme-colors);
